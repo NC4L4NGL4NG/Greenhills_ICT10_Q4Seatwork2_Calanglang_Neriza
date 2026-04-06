@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 10 Classmates System</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <h1>Grade 10 Classmates System</h1>
+    <p>Add and view your classmates easily</p>
+
+    <div class="input-form">
+        <input type="text" id="nameInput" placeholder="Name"><br>
+        <input type="text" id="sectionInput" placeholder="Section"><br>
+        <input type="text" id="subjectInput" placeholder="Favorite Subject"><br>
+        
+        <button id="addBtn" style="background-color: blue; color: white;" py-click="add_classmate">Add Classmate</button>
+        <button id="showBtn" style="background-color: green; color: white;" py-click="show_list">Show List</button>
+    </div>
+
+    <div class="list-container" id="listOutput">
+        <h3>📋 Classmate List</h3>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
